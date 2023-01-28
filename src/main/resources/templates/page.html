@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/head"></head>
+<body>
+	<head th:replace="/fragments/nav :: nav-front"></head>
+	<div class="container-fluid mt-5 bg">
+		<div class="row">
+			<div th:replace="/fragments/categories"></div>
+			<div class="col"></div>
+			<div class="col-7" th:utext="${page.content}"></div>
+			<div class="col"></div>
+		</div>
+	</div>
+	<head th:replace="/fragments/footer"></head>
+</body>
+</html>
